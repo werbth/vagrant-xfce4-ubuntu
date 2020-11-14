@@ -5,7 +5,7 @@ GUI (i.e., not headless). The Xfce Desktop Environment is used instead of the
 default Unity for performance reasons.
 
 The Vagrant base box is the official Ubuntu 20.04 LTS (Focal Fossa) 64-bit box
-[available from Hashicorp Atlas](https://atlas.hashicorp.com/ubuntu/boxes/xenial64).
+[available from Vagrant Cloud](https://app.vagrantup.com/ubuntu/boxes/focal64).
 
 ## Installation
 
