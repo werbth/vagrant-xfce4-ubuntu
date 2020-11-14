@@ -5,7 +5,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list
 sudo apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install linux-image-extra-$(uname -r) linux-image-extra-virtual
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y install docker-ce
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install docker-ce docker-ce-cli containerd.io
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo usermod --groups docker --append $(whoami)

@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure('2') do |config|
-  config.vm.box = 'ubuntu/xenial64'
+  config.vm.box = 'ubuntu/focal64'
 
   config.vm.box_check_update = false
 
@@ -33,13 +33,10 @@ Vagrant.configure('2') do |config|
   config.vm.provision 'shell', privileged: false, path: 'provision/deb.sh', name: 'deb.sh'
   config.vm.provision 'shell', privileged: false, path: 'provision/git.sh', name: 'git.sh'
   config.vm.provision 'shell', privileged: false, path: 'provision/xfce4.sh', name: 'xfce4.sh'
-  config.vm.provision 'shell', privileged: false, path: 'provision/apps.sh', name: 'apps.sh'
   config.vm.provision 'shell', privileged: false, path: 'provision/google-chrome.sh', name: 'google-chrome.sh'
   config.vm.provision 'shell', privileged: false, path: 'provision/java.sh', name: 'java.sh'
-  config.vm.provision 'shell', privileged: false, path: 'provision/idea.sh', name: 'idea.sh'
   config.vm.provision 'shell', privileged: false, path: 'provision/nodejs.sh', name: 'nodejs.sh'
   config.vm.provision 'shell', privileged: false, path: 'provision/nvm.sh', name: 'nvm.sh'
-  config.vm.provision 'shell', privileged: false, path: 'provision/atom.sh', name: 'atom.sh'
   config.vm.provision 'shell', privileged: false, path: 'provision/vim.sh', name: 'vim.sh'
   config.vm.provision 'shell', privileged: false, path: 'provision/fonts.sh', name: 'fonts.sh'
   config.vm.provision 'shell', privileged: false, path: 'provision/docker.sh', name: 'docker.sh'
